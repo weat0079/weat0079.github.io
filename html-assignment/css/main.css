@@ -1,0 +1,36 @@
+body {
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+head, footer {
+    background-color: violet;
+}
+
+.site-title {
+    background-color: burlywood;
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+ul {
+    list-style-type: square;  
+}
+
+li:nth-child(odd){ 
+    background-color: aqua;
+}
+
+a {
+    text-decoration: none; 
+    background-color: violet;
+    border-style: solid;
+}
+
+a:hover {
+    background-color: white;
+    transition: 0.2s;
+
+}
