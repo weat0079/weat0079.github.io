@@ -10,7 +10,7 @@ body {
     margin-left: 500px;
    
   }
-   /*Text on the banner image*/
+   /*Text on the banner*/
   .container {
     position: relative;
     text-align: center;
@@ -189,6 +189,12 @@ body {
    
     
   }
+
+ .last {
+    padding-left: 850px;
+    white-space: nowrap;
+ }
+ 
    
    
    
