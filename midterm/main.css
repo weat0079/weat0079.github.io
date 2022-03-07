@@ -1,0 +1,197 @@
+body {
+    background-color: #aad4cf;
+    
+    
+  }
+   /* Background color for the section */
+  .color {
+    background-color: #d4f0ec;
+    width: 1000px;
+    margin-left: 500px;
+   
+  }
+   /*Text on the banner*/
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 2000px;
+    
+    
+    
+  }
+   /*Banner image */
+  .image {
+    margin-right: 1000px;
+    height: 350px;
+    
+  }
+   /* Centerered text */
+  .centered {
+    font-family: Arial;
+    font-size: 60px;
+    position: absolute;
+    top: 58%;
+    left: 25%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /*Nav bar */
+  .nav {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer; 
+  }
+   
+  /* Nav bar design */
+  .navbar {
+    border-right: 2px solid gray;
+    padding: 3px 2px;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 18px;
+    
+    
+    }
+   
+  li a {
+    text-decoration: none;
+    color: black;
+    font-family: helvetica;
+    padding: 120px;
+    
+     }
+   
+    li:last-child {
+    border-right: gray;
+  }
+   
+   
+  * {
+    box-sizing: content-box;
+    }
+   
+    
+   /* Contact info text */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Arial;
+   
+    
+   
+    
+  }
+   /*The submit button for contact*/
+  input[type=button] {
+    background-color: transparent;
+    color:black;
+    padding: 12px 20px;
+    border: solid;
+    border-width: thin;
+    cursor: pointer;
+    
+  }
+   
+   /*Contact box */
+   .contact {
+    border-radius: 5px;
+    padding: 1px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 950px;
+    
+    
+    
+    }
+   
+   /*Styling of each column*/
+  .column {
+    margin: inherit;
+    width: 90%;
+    margin-top: 6px;
+    padding: 50px;
+    border: solid;
+    border-width: thin;
+  }
+   
+   /*Display for each row */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+   /*Paragraph of life of a starfish */
+  .life {
+    margin-left: 20px;
+    margin-top: 50;
+    font-family: Arial;
+   
+  }
+   /*The header of the paragraph*/
+  h2 { 
+    font-family: Helvetica;
+    
+  }
+   
+   /*The paragraph of life of a starfish wrapping */
+  .paragraph {
+   margin: 1px 7px;
+   width: 87%;
+   height: 20%;
+   font-size: 16px;
+   
+   
+   
+   
+  }
+  /*The small image of the starfish*/
+  .star {
+    width: 230px;
+    height: 245px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    top: 10px;
+    float: left;
+    
+  }
+   /* The paragraph about the life of a starfish*/
+  .text {
+    text-align: left;
+    font-family: Helvetica;
+    
+  }
+   
+   
+   /* Title of facts*/
+  .title {
+    padding: 10px 5px;
+    
+  }
+   /*The list of facts*/
+  .fact {
+   font-family: helvetica;
+   font-size: 15px;
+   padding: 1px;
+   
+   
+   
+  }
+   
+   /* Contact to learn more section*/
+  .selection {
+    padding: 5px;
+   
+    
+  }
+
+ .last {
+    padding-left: 850px;
+    white-space: nowrap;
+ }
+ 
