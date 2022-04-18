@@ -16,10 +16,10 @@
               <img class="site-logo" src="images/logo.png" alt="star-logo">
            </div>
           <!--Navigation bar -->
-          <nav class="nav-bar"></nav>
+          <nav class="nav-bar">
             <ul class="nav-items">
 
-                <li><a href="current">Home</a></li>
+                <li class="current"><a href="#current">Home</a></li>
                 <li><a href="#about-us">About us</a></li>
                 <li><a href="#service">Services</a></li>
                 <li><a href="#our-team">Team</a></li>
@@ -30,18 +30,18 @@
         <div class="search-container">
             <div class="search-bar">
                 <input type="text" placeholder="Search" name="search">
+                <button type="submit" class="search-button"><i class="im im-magnifier"></i></button>
             </div>
-        </div>
-
+        
        </header>
        </div>
 
        <!-- Start of Main content -->
        <main>
           <!-- Welcome Section -->
-          <section id="hero">
-              <div class="hero">
-                  <div class="hero-background">
+          <section class="hero">
+              <div class="hero-background">
+                  <div class="hero-text">
                       <h1>Welcome to Three Star Media</h1>
                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum reprehenderit explicabo
                         ad
@@ -49,14 +49,18 @@
                         quas sed voluptas laborum repellendus distinctio enim debitis quod! Eveniet animi aperiam
                         autem
                         rerum sapiente ab.</p>
-                        <a class="button-2" href="#">Connect with us  <i class="im im-care-right"></i></a>
+                        <a class="button-1" href="#">Connect with us  <i class="im im-care-right"></i></a>
                   </div>
+              </div>
               </div>
           </section>
          <!-- About us section -->
-         <section id="about-us"> 
-             <div class="about-sec">
+         <section id="abt"> 
+             <div class="about-us">
+             <div class="about-img">
                  <img src="images/about-us.jpg" alt="about us photo">
+                </div>
+                <div class="about-us-text">
                  <h2>About Us</h2>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto expedita aliquam quo sint maxime repudiandae aut, 
                      soluta dolores, porro iure qui amet! Labore fugit voluptatem assumenda fuga. Quas, mollitia placeat!
@@ -69,27 +73,22 @@
                     facilis officia.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus vel sapiente dolores
                     eaque deleniti nobis veniam commodi dolorum?</p>
-             </div>
+                </div>
+            </div>
          </section>
          <!-- Services Section -->
-         <section id="services">
-             <h2>Our Services</h2>
-             
+         <section id="service-items">
+             <h2 class="title-services">Our Services</h2>
+             <div class="services">
              <!-- Digital Section -->
              <div class="digital">
                  <img src="images/digital.jpg" alt="digital transformation photo">
                  <h3>Digital Transformation</h3>
                  <p>
-                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, corporis ipsum? Ea,
-                     facere
-                     rerum recusandae itaque aspernatur
-                     corporis quidem! Voluptate necessitatibus tempore, quasi incidunt adipisci nemo aliquid
-                     odit
-                     totam in. Lorem ipsum dolor sit
-                     amet consectetur adipisicing elit. Adipisci, saepe similique ratione neque facere rem
-                     quo
-                     recusandae doloremque omnis animi
-                     explicabo molestiae possimus repellat dolore corrupti fugit fugiat? Velit, laboriosam.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eos dicta quae unde aut architecto,
+                    omnis
+                    asperiores possimus fuga, hicy picky.
+                    Quibusdam in, deleniti aliquid dolorem nisi beatae praesentium culpa?
                  </p>
                  <a class="btn-digital" href="#">Digital Plans  <i class="im im-care-right"></i></a>
              </div>
@@ -106,6 +105,7 @@
               <!-- Video Section -->
            <div class="video">
                <img src="images/video.jpg" alt="video photo">
+               <h3>Video Production</h3>
                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quaerat impedit reiciendis!
                 Voluptas
                 facilis magni facere numquam
@@ -130,23 +130,30 @@
                    libero
                    excepturi vitae dolorem fugit? Sunt vero
                    provident facilis et beatae quis quasi dicta? Nisi, quaerat.</p>
-                   <a class="btn-print" href="#">Print Plans  <i class="im im-care-right"></i></a> 
+                   <a class="btn-print" href="#">Print Plans  <i class="im im-care-right"></i></a>
+            </div> 
           </div>
          </section>
          <!-- Our Vision Section -->
-         <h2>Our Vision</h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui pariatur officiis, voluptates natus
+         <section id="vision-sec">
+             <div class="vision-txt">
+         <h2 class="vision-title">Our Vision</h2>
+         <p class="vision-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui pariatur officiis, voluptates natus
             sit
             nihil, ducimus, recusandae dicta a tempora
             deleniti? Totam quibusdam deleniti dolores officiis veritatis molestias commodi aliquam?</p>
             <a class="btn-vision" href="#">Learn More  <i class="im im-care-right"></i></a> 
-        
+        </div>
+        </section>
         <!-- Our Team Section -->
         <section id="team">
             <h2>Our Team</h2>
             <!-- John Doe -->
-            <div class="john-doe"></div>
+            <div class="team-member">
+            <div class="john-doe">
             <img src="images/john.jpg" alt="john doe">
+        </div>
+        <div class="team-txt">
             <h3>John Doe</h3>
             <h4>CEO and Co-owner</h4>
             <p>
@@ -154,9 +161,15 @@
                 alias ab. A in voluptatem laboriosam,
                 ad error laborum voluptas odit sint iusto quos commodi doloribus sequi, qui molestiae!
             </p>
+        </div>
+        </div>
+
             <!-- Bob Rite -->
+            <div class="team-member">
             <div class="bob-rite">
             <img src="images/bob.jpg" alt="bob rite">
+            </div>
+            <div class="team-txt">
             <h3>Bob Rite</h3>
             <h4>CFO and Co-owner</h4>
             <p>
@@ -164,13 +177,14 @@
                 alias ab. A in voluptatem laboriosam,
                 ad error laborum voluptas odit sint iusto quos commodi doloribus sequi, qui molestiae!
             </p>
+        </div>
+        </div>
             </div>
         </section>
         <!-- Contact Section -->
-        <section id="contact-us">
-            <h2>Contact us</h2>
-            <!-- Contact Form -->
+        <div class="contact-us">
             <div class="contact-form">
+            <h2 class="contact-title">Contact us</h2>
                 <form action="#" method="get">
                     <div>
                         <label for="fullname">Full Name</label>
@@ -188,11 +202,10 @@
                 </form>
             </div>
 
-        </section>
         <!-- Hours of Operation -->
-        <section id="schedule">
+        <div class="schedule">
                           <h3>Hours of Operation</h3>
-                <table>
+                <table class="open-times">
                     <tr>
                         <th>Days</th>
                         <th>Hours</th>
@@ -206,15 +219,20 @@
                        <td>Closed</td>
                     </tr>
                 </table>  
-        </section>
-        <!-- Google maps -->
-        <section id="location">
+            </div>
+
+                       <!-- Google maps -->
+           <div class="location">
             <h2>Location</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.962655420181!2d-75.7525349959349!3d45.34956611007805!2m3!1f0!
             2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0722395fc63d%3A0x35c46b5ff47a522!2sAlgonquin%20College%2C%201385%20Woodroffe%20Ave%2C%2
             0Nepean%2C%20ON%20K2G%203G7!5e0!3m2!1sen!2sca!4v1606768374554!5m2!1sen!2sca" width="600"
             height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </section>
+            </div>
+    </div>
+
+
+    
         <!-- Site Footer -->
         <footer class="site-footer">
                 <p>&copy; Copyright Three Star Media, 2020</p>
