@@ -16,34 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
+	display: block;
 }
 
 body {
     line-height: 1;
 }
 
-ol, ul {
-    list-style: none;
-}
-
 blockquote, q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after, 
+q:before, q:after {
     content: '';
     content: none;
+}
+
+ol, ul {
+    list-style: none;
 }
 
 table {
@@ -51,18 +52,53 @@ table {
     border-spacing: 0;
 }
 
-/* --------- Custom Styles --------- */
+
+/* -------- Main Styling ------- */
+
 
 html {
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
-img {
-    width: 100%;
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+section {
+    padding: 20px;
+}
+
+section#hero {
+    padding: 0px;
 }
 
 body {
     line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 5.063rem;
+
+}
+
+h2 {
+    font-size: 3.375rem;
+
+}
+
+h3 {
+    font-size: 2.25rem;
+
 }
 
 a,
@@ -71,8 +107,420 @@ a:visited {
     text-decoration: none;
 }
 
+p {
+    font-size: 16px;
+    padding: 12px;
+}
+
+img {
+    width: 100%;
+}
+
+/* -------- Nav Styling ------- */
+
+.site-header {
+    background-color: #222;
+    padding: 20px;
+}
+
+.nav-bar {
+    height: 400px;
+}
+
+.nav-logo {
+    background: #c78c06;
+    height: 70px;
+    width: 100px;
+    padding-left: 400px;
+}
+
+nav li.current a {
+    background: #c78c06;
+    color: #222;
+}
+
+nav li a {
+    color: #c78c06;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 90px;
+    float: left;
+}
+
+.search-bar {
+    display: flex;
+    height: 40px;
+    padding-right: 150px;
+}
+
+.search-bar-input {
+    display: flex;
+    flex: 1;
+}
+
+.search-bar button {
+    display: flex;
+    flex: 0;
+    padding: 4px;
+}
+
+.search-button {
+    float: right;
+    border: 1px solid #c78c06;
+    background: #222;
+    color: #c78c06;
+
+}
+
+
+/* ---Button Styles--- */
+
+a.button-1,
+a.btn-digital,
+a.btn-marketing,
+a.btn-video,
+a.btn-web,
+a.btn-print,
+a.btn-vision {
+    padding: 1.7rem;
+    display:inline-block;
+    font-size: 1.4rem;
+}
+
+a.button-1 {
+    background-color: #c78c06;
+    color: #222;
+}
+
+a.btn-digital {
+    color: white;
+    background-color: #222222;
+    width: 90%; 
+    padding-left: 15em;  
+    
+}
+
+a.btn-marketing {
+    color: white;
+    background-color: #222222;
+    width: 90%; 
+    padding-left: 15em; 
+}
+
+a.btn-video {
+    color: white;
+    background-color: #222222;
+    width: 90%; 
+    padding-left: 10em; 
+    
+}
+
+a.btn-web {
+    color: white;
+    background-color: #222222;
+    width: 90%; 
+    padding-left: 10em; 
+}
+
+a.btn-print {
+    color: white;
+    background-color: #222222;
+    width: 90%; 
+    padding-left: 10em; 
+}
+
+a.btn-vision {
+    background-color: rgba(34, 34, 34, 0.75);
+    border: 1px solid #c78c06 ;
+    margin-left: 150px;
+    color: white;
+    
+}
 
 
 
 
- 
+
+/* -------- Main Content ------- */
+
+.hero {
+    background: grey url("../images/main-banner.jpg") no-repeat center bottom;
+    background-size: cover;
+    vertical-align: middle;
+    padding-left: 350px;
+}
+
+.hero-text {
+    background: rgb(0, 0, 0, 0.6);
+    color: white;
+    padding: 70px;
+    width: 70%;
+}
+
+
+/* -------- About us section ------- */
+
+#about-us img {
+    padding: 10px;
+}
+
+#abt {
+    background: #ffe6ac;
+}
+
+/* -------- Our vision section ------- */
+
+#vision-sec {
+    background-image: url(../images/vision.jpg);
+    background-position: center;
+    color: white;
+    
+}
+
+.vision-title {
+      padding-left: 150px;
+      
+}
+
+.vision-para {
+    padding-left: 150px;
+    
+}
+
+/* -------- Desktop Styling ------- */
+
+@media screen and (min-width: 760px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        height: 100px;
+    }
+
+    .nav-list li {
+        float: left;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .nav-logo {
+        background: none;
+        height: 46px;
+    }
+
+    .nav-logo img {
+        height: 75px;
+        width: 100px;
+        padding: 0px;
+
+    }
+
+   /* -------- About us section ------- */
+
+    .about-img {
+        grid-area: img;
+    }
+
+    .about-us-text{
+        grid-area: txt;
+    }
+    
+    .about-us-img img {
+        height: 400px;
+
+    }
+
+    .about-us {
+    display: grid;
+    grid-template-areas:
+         'img img img txt txt txt'
+         'img img img txt txt txt';
+    grid-gap: 9px;
+         
+
+    }
+
+      /* -------- Services ------- */
+
+      .services h3, 
+.services p, 
+.services a  {
+    margin: 1rem;
+}
+
+
+.digital {
+    background-color: #FFE6AC;
+    padding-right: 3px;
+    grid-area: d1;
+}
+
+.marketing {
+    background-color: #FFE6AC;
+    grid-area: m2;
+}
+
+.video {
+    background-color: #FFE6AC;
+    grid-area: v3;
+}
+
+.web-dev {
+    background-color: #FFE6AC;
+    grid-area: w4;
+}
+
+.print{
+    background-color: #FFE6AC;
+    grid-area: p5;
+}
+
+
+    .title-services {
+        margin: 10px;
+        padding-left: 140px;
+    }
+
+    .services {
+        display: grid;
+        gap: 1rem;
+        padding-left: 150px;
+        padding-right: 150px;
+        margin-bottom: 20px;
+        grid-template-areas: 
+            "d1 d1 d1 m2 m2 m2"
+            "v3 v3 w4 w4 p5 p5";
+        }
+    
+
+    /* -------- Team section ------- */
+
+    .team-member {
+        background: #ffe6ac;
+    }
+
+    .team-txt {
+        padding: 10px;
+        
+    }
+
+    #team h4 {
+        border-bottom: 2px solid #C78B07;
+    }
+
+
+    .team-member img {
+        height: 350px;
+        width: auto;
+        
+    }
+
+    #team {
+        padding-left: 350px;
+        margin-right: 300px;
+        
+    }
+
+    .john-doe {
+        float: left;
+        
+     }
+
+    .team-member::after {
+        content: "";
+        display: block;
+        clear: both;
+
+    }
+
+    .bob-rite {
+        float: right;
+    }
+
+    /* -------- Contact section ------- */
+
+    .contact-form div {
+        margin-bottom: 15px;
+        margin-left: 350px;
+    }
+    
+    
+    input[type=text],
+    textarea {
+        width: 120%;
+    }
+    .contact-title {
+        padding-left: 340px;
+    }
+    
+    .contact-form button {
+        display: inline-block;
+        background-color: #222;
+        color: #C78B07;
+        font-size: 18px;
+        padding: 4px;
+        margin-left: 350px;
+     }
+
+   /* -------- Schedule Section ------- */
+     .schedule {
+         margin-left: 300px;
+         margin-bottom: 15px;
+     }
+    
+    .open-times {
+        width: 80%;
+    }
+    
+    table.open-times th {
+        background: #ffe6ac;
+    }
+
+    .open-times th,
+    .open-times td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 13px;
+    }
+    
+    .location {
+        float: right;
+        margin-left: 150px;
+    }
+
+    .contact-form {
+        grid-area: form;
+    }
+
+    .schedule {
+        grid-area: hours;
+    }
+
+    .location {
+        grid-area: location;
+    }
+
+    .contact-us {
+        display: grid;
+        grid-template-areas:
+            'form form form location location location'
+            'hours hours hours hours hours hours';
+        grid-gap: 5px;
+    }
+
+    /* -------- Site Footer Styling ------- */
+    .site-footer {
+        background-color:#222;
+        padding: 15px;
+    }
+    .site-footer p {
+        color: #C78B07;
+        padding: 4px;
+    }
+    
+
+    
+
+
+}
+
